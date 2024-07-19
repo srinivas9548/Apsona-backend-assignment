@@ -1,0 +1,49 @@
+// API 1 Create a new note
+POST http://localhost:4000/addNotes
+Content-Type: application/json
+
+{
+    "title": "Learn HTML",
+    "description": "This is the Dynamic layout.",
+    "archieve": "0",
+    "is_delete": "0"
+}
+
+###
+
+// API 2
+GET http://localhost:4000/getNotes
+
+###
+
+// API 3 Toggle Archieve Status
+PUT http://localhost:4000/updateArchievedNotes
+Content-Type: application/json
+
+{
+  "id": "1",
+  "archieve": "1"
+}
+
+###
+
+//API 4
+GET http://localhost:4000/getArchivedNotes
+
+###
+
+// API 5 Toggle Deleted Status
+PUT http://localhost:4000/updateDeleteNotes
+Content-Type: application/json
+
+{
+  "id": "2",
+  "is_delete": "1"
+}
+
+###
+
+// API 6
+GET http://localhost:4000/getDeletedNotes
+
+###
